@@ -1,0 +1,75 @@
+[0m21:08:53.854123 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ADD0CC5E50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ADD152BDA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ADD117A480>]}
+
+
+============================== 21:08:53.854123 | 996e2a68-d29e-4f55-8045-645f9dc2d78e ==============================
+[0m21:08:53.854123 [info ] [MainThread]: Running with dbt=1.12.6
+[0m21:08:53.854123 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\EXCALIBUR\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt init nova_dbt', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'logs'}
+[0m21:08:53.899886 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\EXCALIBUR\.dbt
+[0m21:08:53.903348 [debug] [MainThread]: Starter project path: C:\Users\EXCALIBUR\anaconda3\Lib\site-packages\dbt\include\starter_project
+[0m21:08:53.934603 [info ] [MainThread]: Setting up your profile.
+[0m21:09:33.845123 [info ] [MainThread]: Profile nova_dbt written to C:\Users\EXCALIBUR\.dbt\profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m21:09:33.847251 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m21:09:33.851181 [info ] [MainThread]: dbt version: 1.12.6
+[0m21:09:33.852225 [info ] [MainThread]: python version: 3.12.4
+[0m21:09:33.853330 [info ] [MainThread]: python path: C:\Users\EXCALIBUR\anaconda3\python.exe
+[0m21:09:33.853330 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m21:09:33.931858 [info ] [MainThread]: Using profiles dir at C:\Users\EXCALIBUR\.dbt
+[0m21:09:33.931858 [info ] [MainThread]: Using profiles.yml file at C:\Users\EXCALIBUR\.dbt\profiles.yml
+[0m21:09:33.931858 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\EXCALIBUR\OneDrive\Desktop\perakende_projesi\nova_dbt\dbt_project.yml
+[0m21:09:33.931858 [info ] [MainThread]: adapter type: duckdb
+[0m21:09:33.931858 [info ] [MainThread]: adapter version: 1.11.1
+[0m21:09:34.031202 [info ] [MainThread]: Configuration:
+[0m21:09:34.031202 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m21:09:34.031202 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m21:09:34.031202 [info ] [MainThread]: Required dependencies:
+[0m21:09:34.031202 [debug] [MainThread]: Executing "git --help"
+[0m21:09:34.046846 [info ] [MainThread]:  - git [[31mERROR[0m]
+
+[0m21:09:34.048130 [info ] [MainThread]: Connection:
+[0m21:09:34.049142 [info ] [MainThread]:   database: dev
+[0m21:09:34.049142 [info ] [MainThread]:   schema: main
+[0m21:09:34.050212 [info ] [MainThread]:   path: dev.duckdb
+[0m21:09:34.050954 [info ] [MainThread]:   config_options: None
+[0m21:09:34.051329 [info ] [MainThread]:   extensions: None
+[0m21:09:34.052449 [info ] [MainThread]:   settings: {}
+[0m21:09:34.053151 [info ] [MainThread]:   external_root: .
+[0m21:09:34.053741 [info ] [MainThread]:   use_credential_provider: None
+[0m21:09:34.053741 [info ] [MainThread]:   attach: None
+[0m21:09:34.053741 [info ] [MainThread]:   filesystems: None
+[0m21:09:34.053741 [info ] [MainThread]:   remote: None
+[0m21:09:34.053741 [info ] [MainThread]:   plugins: None
+[0m21:09:34.053741 [info ] [MainThread]:   disable_transactions: False
+[0m21:09:34.053741 [info ] [MainThread]: Registered adapter: duckdb=1.11.1
+[0m21:09:34.321969 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m21:09:34.636250 [debug] [MainThread]: Using duckdb connection "debug"
+[0m21:09:34.636250 [debug] [MainThread]: On debug: select 1 as id
+[0m21:09:34.636250 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:09:34.788611 [debug] [MainThread]: SQL status: OK in 0.149 seconds
+[0m21:09:34.788611 [debug] [MainThread]: On debug: Close
+[0m21:09:34.788611 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m21:09:34.788611 [info ] [MainThread]: [31m1 check failed:[0m
+[0m21:09:34.788611 [info ] [MainThread]: Error from git --help: Could not find command, ensure it is in the user's PATH and that the user has permissions to run it: "git"
+
+[0m21:09:34.788611 [info ] [MainThread]: Your new dbt project "nova_dbt" was created!
+Initialized new project in C:\Users\EXCALIBUR\OneDrive\Desktop\perakende_projesi\nova_dbt\nova_dbt
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m21:09:34.788611 [info ] [MainThread]: [31mYour profile may need adjustments. You can find the logs of `dbt debug` above[0m
+[0m21:09:34.788611 [debug] [MainThread]: Command `dbt init` succeeded at 21:09:34.788611 after 41.10 seconds
+[0m21:09:34.795559 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m21:09:34.795559 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ADD0CC5E50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ADD17B26F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ADD17B11F0>]}
+[0m21:09:34.795559 [debug] [MainThread]: Flushing usage events
+[0m21:09:35.545992 [debug] [MainThread]: An error was encountered while trying to flush usage events

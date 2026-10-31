@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: stg_nufus
+    description: "81 ilin temizlenmiş nüfus ve koordinat verisi"
+    columns:
+      - name: sehir
+        description: "Şehir adı"
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_satislar
+    description: "Temizlenmiş ve net tutar/kar hesaplanmış perakende satış verisi"
+    columns:
+      - name: siparis_id
+        description: "Sipariş numarası"
+        tests:
+          - not_null
+      - name: sehir
+        description: "Satışın yapıldığı şehir"
+        tests:
+          - not_null
+
+  - name: fct_sehir_performans
+    description: "Şehir bazlı satış performansı ve nüfus birleşim tablosu (Mart)"
+    columns:
+      - name: sehir
+        description: "Şehir adı"
+        tests:
+          - not_null
+          - unique
