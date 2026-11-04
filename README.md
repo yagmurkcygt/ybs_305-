@@ -163,6 +163,8 @@ Tekillik Kontrolü (unique): İl bazlı nüfus (stg\_nufus), tatil takvimi (stg\
 Dashboard ve KPI'lar 
 Veri modelleme sürecinin sonunda elde edilen birleştirilmiş tablolar karar alıcılara sunulmak üzere Google Looker Studio üzerinde interaktif bir dashboard'a dönüştürülmüştür.
 
+Canlı Dashboard Linki: https://datastudio.google.com/reporting/d5f0e7da-3493-41e5-b845-633088d999fa
+
 Takip Edilen Temel KPI'lar (Metrikler):
 Toplam Ciro (toplam\_ciro): Şehir ve dönem bazında elde edilen toplam brüt satış geliri.
 Toplam Kâr (toplam\_kar): Maliyetler düşüldükten sonra kalan net kazanç tutarı.
